@@ -58,6 +58,10 @@ nav{
 			font-weight: 300;
 		}
 
+		nav ul li:hover {
+			    background-color: darkgray;
+		}
+
 nav a { color: white;}
 
 
@@ -161,6 +165,8 @@ aside {
 	margin-left: 5%;
 	width: 75%;
 	background: none;
+
+
 }
 #textoPresentacion span{background-color: rgba(0, 0, 0, 0.4); color: white;}
 
@@ -181,14 +187,21 @@ aside {
 
 	
 #accesoNoticias{
-	background-color: lightblue;
+	
 	height:40 px;
 	font-size: 1.5rem;
 	font-weight: 300;
 	color: black;
 	text-align: right;
 	padding: 5px 0 5px 5%;
+
+	/* animaciones */
+	background-image: linear-gradient(to right, blue , lightblue)
+
+
 	}
+
+
 
 
 
@@ -206,7 +219,7 @@ aside {
 	flex-direction: column; 
 
 	margin-top: 10px;
-	margin-left: 5px;
+}	margin-left: 5px;
 	width: 45%}
 
 .disclaimerContacto{ 
@@ -233,6 +246,15 @@ margin-bottom: 20px;}
 .detalleColumna1{ width: 60%; padding: 0.2%; font-weight: 300; font-size: 1.3rem; color: black}
 .detalleColumna2{ width: 15%; padding: 0.2%; font-weight: 300; font-size: 1.3rem; color: black; text-align: right; }
 
+
+.moverTexto{
+	animation-name: resaltar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
 /* Trabajamos con Grid" */
 .contenedor {
 	display:grid;
@@ -246,6 +268,16 @@ margin-bottom: 20px;}
 .gridFooter { grid-area:pie } 
 
 
+/*animacion*/
+
+@keyframes resaltar {
+   25%{ font-size: 4rem }
+   50%{ font-size: 6rem }
+   75%{ font-size: 4rem}
+   100%{ font-size: 6rem}
+}
+
+/*Responsive */
 @media screen and (max-width: 480px) {
 
 	h1{font-size: 5rem;}
