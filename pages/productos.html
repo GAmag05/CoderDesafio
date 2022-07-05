@@ -6,6 +6,9 @@
 	<title>Planbok - Soluciones de Cobranza</title>
 	<link rel="shortcut icon" href="../imagenes/favicon.png">
 
+	<!-- Vinculo Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 	<!-- vinculo el  CSS -->
 	<link rel="stylesheet" href="../css/style.css">
 
@@ -18,104 +21,96 @@
 		</p>	
 	</div>
 
-	<nav>
-		<a href="../index.html"><img src="../imagenes/logoBlack.png" alt="Logo de Planbok, solucines de Cobranza."></a>
-		<ul>
-			<li><a href="empresa.html">Empresa</a></li>
-			<li>|</li>
-			<li><a href="#">Productos</a></li>
-			<li>|</li>
-			<li><a href="contactenos.html">Contactenos</a></l>
-		</ul>
+
+
+	<!-- inicia nav con Bootstrap -->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  	<div class="container-fluid">
+		    <a class="navbar-brand" href="../index.html">
+		    	<img id="imagenLogo" src="../imagenes/logoplanbok.jpg" alt="Logo de Planbok, solucines de Cobranza.">	
+		   	</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		     	<span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      	<ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+		           	<li class="nav-item ">
+		          		<a class="nav-link"  href="empresa.html"><h3>Empresa</h3></a>
+		        	</li>
+		        	<li class="nav-item ">
+		          		<a class="nav-link" href="productos.html"><h3>Productos</h3></a>
+		        	</li>
+		        	<li class="nav-item">
+		          		<a class="nav-link" href="contactenos.html"><h3>Contactenos</h3></a>
+		        	</li>
+		      	</ul>
+		    </div>
+		</div>
 	</nav>
 
-	<!-- Imagen central -->
-	<header id="headerProductos">
-		<div id="textoPresentacion">
-			<h1><span>Desarrollamos una amplia gama de soluciones para tu negocio</span></h1>
-		</div>		
-	</header>
+
+	<!-- fin nav con Bootstrap -->
+
 
 	<!-- Principos de la Empreas -->
-	<main>
-		<section>
-			<article >
-				<h2>Boton de Pago</h2>
-				<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Repudiandae rerum rem voluptatem tempore cumque quis saepe ab, quo ad consectetur soluta. Fugiat et perferendis modi ipsam nesciunt sapiente quod autem!
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut hic sequi earum nam excepturi, odit dignissimos, error aliquam quibusdam dolor quisquam maiores alias recusandae, minima esse nihil corporis reiciendis at. </p>
-				<img class="separaParrafo imagenProducto" src="../imagenes/celular.png" alt="">
-			</article>
-			<article  >
-				<h2>Presencial</h2>
-				<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Repudiandae rerum rem voluptatem tempore cumque quis saepe ab, quo ad consectetur soluta. Fugiat et perferendis modi ipsam nesciunt sapiente quod autem!
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut hic sequi earum nam excepturi, odit dignissimos, error aliquam quibusdam dolor quisquam maiores alias recusandae, minima esse nihil corporis reiciendis at. 
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni, dolorum, repellat quos molestias mollitia cupiditate dolores, eveniet excepturi eum adipisci amet veniam veritatis est facilis tempora distinctio omnis vero.	
-				</p>
-				<img class="separaParrafo imagenProducto" src="../imagenes/celula3r.png" alt="">	
-			</article>
-			<article  >
-				<h2>No Presencial</h2>
-				<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Repudiandae rerum rem voluptatem tempore cumque quis saepe ab, quo ad consectetur soluta. Fugiat et perferendis modi ipsam nesciunt sapiente quod autem!
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut hic sequi earum nam excepturi, odit dignissimos, error aliquam quibusdam dolor quisquam maiores alias recusandae, minima esse nihil corporis reiciendis at. 
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni, dolorum, repellat quos molestias mollitia cupiditate dolores, eveniet excepturi eum adipisci amet veniam veritatis est facilis tempora distinctio omnis vero.	
-				</p>
-				<img class="separaParrafo imagenProducto" src="../imagenes/celula6r.png" alt="">	
-			</article>
-		</section>
+	<section  class="row container-fluid">
+		<article class="col-md-6 col-lg-4">
+			<h2>Boton de Pago</h2>
+			<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Repudiandae rerum rem voluptatem tempore cumque quis saepe ab, quo ad consectetur soluta. Fugiat et perferendis modi ipsam nesciunt sapiente quod autem!
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut hic sequi earum nam excepturi, odit dignissimos, error aliquam quibusdam dolor quisquam maiores alias recusandae, minima esse nihil corporis reiciendis at. </p>
+			<img class="separaParrafo imagenProducto" src="../imagenes/celular.png" alt="">
+		</article>
+		<article   class="col-md-6 col-lg-4">
+			<h2>Presencial</h2>
+			<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Repudiandae rerum rem voluptatem tempore cumque quis saepe ab, quo ad consectetur soluta. Fugiat et perferendis modi ipsam nesciunt sapiente quod autem!
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut hic sequi earum nam excepturi, odit dignissimos, error aliquam quibusdam dolor quisquam maiores alias recusandae, minima esse nihil corporis reiciendis at. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni, dolorum, repellat quos molestias mollitia cupiditate dolores, eveniet excepturi eum adipisci amet veniam veritatis est facilis tempora distinctio omnis vero.	
+			</p>
+			<img class="separaParrafo imagenProducto" src="../imagenes/celula3r.png" alt="">	
+		</article>
+		<article  class="col-md-6 col-lg-4" >
+			<h2>No Presencial</h2>
+			<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Repudiandae rerum rem voluptatem tempore cumque quis saepe ab, quo ad consectetur soluta. Fugiat et perferendis modi ipsam nesciunt sapiente quod autem!
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut hic sequi earum nam excepturi, odit dignissimos, error aliquam quibusdam dolor quisquam maiores alias recusandae, minima esse nihil corporis reiciendis at. 
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni, dolorum, repellat quos molestias mollitia cupiditate dolores, eveniet excepturi eum adipisci amet veniam veritatis est facilis tempora distinctio omnis vero.	
+			</p>
+			<img class="separaParrafo imagenProducto" src="../imagenes/celula6r.png" alt="">	
+		</article>
+	</section>
 		
-		<section class="separaParrafo">
-			<h2>Comisiones</h2>
-			<table class="separaParrafo anchoTabla">
-				<tr>
-					<td class="anchoColumna1"><h3>Producto</h3></td>
-					<td class="anchoColumna2"><h3>Comisión</h3></td>
-					<td class="anchoColumna2"><h3>Acreditación</h3></td>
-				</tr>
-				<tr>
-					<td class="detalleColumna1">Boton de Pago</td>
-					<td class="detalleColumna2">12,43 %</td>
-					<td class="detalleColumna2">12 días</td>
-				</tr>
-				<tr>
-					<td class="detalleColumna1">Presencial</td>
-					<td class="detalleColumna2">15,00 %</td>
-					<td class="detalleColumna2">10 días</td>
-				</tr>
-				<tr>
-					<td class="detalleColumna1">No Presencial</td>
-					<td class="detalleColumna2">7,00 %</td>
-					<td class="detalleColumna2">25 días</td>
-				</tr>
-			</table>
-		</section>
 
-	</main>
-	
-	
-	<footer>
 
-		<div class="disclaimerTxt">
-			<p >Planbok es un Proveedor de Servicios de Pago y no está autorizado por el BCRA para operar como entidad financiera.</p>
-				
-			<ul class="separaParrafo">
-				<li> <a href="../documentos/politicaprivacidad.pdf">Política de Privacidad</a></li>
-				<li> <a href="../documentos/defensaconsumidores.pdf">Defensa de Las y Los Consumidores</a></li>
-				<li> <a href="../documentos/usocondiciones.pdf">Términos de Uso y Condiciones</a></li>
-			</ul>
-		</div>
+	<!--inicio footer -->
 
-		<div class="disclaimerContacto">
-				<ul class="noBloque disclaimerContacto">
-					<li class="noBloque"><a href="contactenos.html">Contactenos</a></li>
-					<li class="noBloque"><a href="https://twitter.com" target="_blank"><img class="iconoChico" src="../imagenes/redes/twitter.png" alt="Logo de la red solcial Twitter"></a></li>
-					<li class="noBloque"><a href="https://instagram.com" target="_blank"><img class="iconoChico" src="../imagenes/redes/instragram.jfif" alt="Logo de la red solcial Instagram"></a></li>
-					<li class="noBloque"><a href="https://facebook.com" target="_blank"><img class="iconoChico" src="../imagenes/redes/facebook.png" alt="Logo de la red solcial Facebook"></a></li>
+	<div class="row container-fluid">
+
+		   	<div class="disclaimerTxt col-lg-6">
+				<p >Planbok es un Proveedor de Servicios de Pago y no está autorizado por el BCRA para operar como entidad financiera.</p>
+					
+				<ul class="separaParrafo">
+					<li> <a href="../documentos/politicaprivacidad.pdf">Política de Privacidad</a></li>
+					<li> <a href="../documentos/defensaconsumidores.pdf">Defensa de Las y Los Consumidores</a></li>
+					<li> <a href="../documentos/usocondiciones.pdf">Términos de Uso y Condiciones</a></li>
 				</ul>
-		</div>			
+			</div>
 
-		
-	</footer>
+			<div class="disclaimerContacto disclaimerTxt col-lg-6">
+					<ul class="disclaimerContacto">
+						<li><a href="contactenos.html">Contactenos</a></li>
+						<li><a href="https://twitter.com" target="_blank"><img class="iconoChico" src="../imagenes/redes/twitter.png" alt="Logo de la red solcial Twitter"></a></li>
+						<li><a href="https://instagram.com" target="_blank"><img class="iconoChico" src="../imagenes/redes/instragram.jfif" alt="Logo de la red solcial Instagram"></a></li>
+						<li><a href="https://facebook.com" target="_blank"><img class="iconoChico" src="../imagenes/redes/facebook.png" alt="Logo de la red solcial Facebook"></a></li>
+					</ul>
+			</div>			
 
+
+<!--Fin footer -->
+	
+
+
+	<!-- Librerias JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
